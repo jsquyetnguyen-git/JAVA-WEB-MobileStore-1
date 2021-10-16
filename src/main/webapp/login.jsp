@@ -10,18 +10,19 @@
     <meta charset="ISO-8859-1">
 
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="assets/Qmobile.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/ico/Qmobile.ico" />
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    
     <!-- css+bootstrap -->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 
-<body id="page-top">
+<body>
     <!-- Modal -->
     <div class="modal-dialog shadow-lg">
         <div class="modal-content">
@@ -29,7 +30,7 @@
                 <img style="width: 8rem;" src="./img/logos/logo.png" alt="logo">
             </div>
             <div class="modal-body">
-                <form action="/PRJ321x_Project_1_FX10152/login" method="post">
+                <form action="/PRJ321x_Project_1_FX10152/login" method="post" name="loginForm" onsubmit="return validForm()">
                     <div class="md-form mb-4">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" placeholder="Enter username" class="form-control">
@@ -53,8 +54,8 @@
         </div>
     </div>
 
-    <!--JS-->
-    <script src="scripts.js"></script>
+<!--JS-->
+<script src="script/scripts.js"></script>
 </body>
 
 </html>
